@@ -1,0 +1,32 @@
+.articles{
+    background-color: $veryLightGray;
+    a:visited {
+        color:inherit;
+    }
+    .article{
+        &__grid{
+            display: flex;
+            @include breakpoint-down(medium){
+                flex-wrap: wrap;
+            }
+        }
+        &__item{
+            padding: 0.7rem;
+        }
+        &__image{
+            background-image: url('/images/image-currency.jpg');
+        }
+        &__author{
+            padding-bottom: 0.2rem;
+            font-size: 0.8rem;
+        }
+        &__title{
+            padding-bottom: 0.5rem;
+            font-size: 1.3rem;
+            color: $darkBlue;
+        }
+        &__description{
+            
+        }
+    }
+}
