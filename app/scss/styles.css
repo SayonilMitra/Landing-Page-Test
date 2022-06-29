@@ -18,7 +18,35 @@ body {
 }
 
 h1, h2, h3 {
+  font-weight: 300;
+  line-height: 1.15;
+  color: hsl(233deg, 26%, 24%);
   margin-top: 0rem;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.31rem;
+  line-height: 1.15;
+  color: hsl(233deg, 26%, 24%);
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 64em) {
+  h1 {
+    font-size: 3.25rem;
+  }
+}
+
+h2 {
+  color: hsl(233deg, 26%, 24%);
+  font-size: 1.875rem;
+  margin-bottom: 1.5625rem;
+}
+@media (min-width: 64em) {
+  h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
 }
 
 a, a:visited, a:hover {
@@ -242,19 +270,44 @@ button:hover, .button:hover {
     text-align: left;
   }
 }
-.hero__text h1 {
-  font-weight: 300;
-  font-size: 2.31rem;
-  line-height: 1.15;
-  color: hsl(233deg, 26%, 24%);
-  margin-bottom: 1.5rem;
-}
-@media (min-width: 64em) {
-  .hero__text h1 {
-    font-size: 3.25rem;
-  }
-}
-.hero__text h1 p {
+.hero__text p {
   line-height: 1.5;
   margin-bottom: 2.25rem;
+}
+
+.feature {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 64em) {
+  .feature__intro {
+    width: 60%;
+    margin-bottom: 3.75rem;
+  }
+}
+@media (min-width: 40em) {
+  .feature__grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.feature__item {
+  padding: 0.9375rem;
+}
+@media (min-width: 40em) {
+  .feature__item {
+    flex: 1 0 50%;
+  }
+}
+@media (min-width: 64em) {
+  .feature__item {
+    flex: 1;
+  }
+}
+.feature__icon {
+  margin-bottom: 0.8rem;
+}
+.feature__title {
+  color: hsl(233deg, 26%, 24%);
+  margin-bottom: 0.8rem;
 }/*# sourceMappingURL=styles.css.map */
