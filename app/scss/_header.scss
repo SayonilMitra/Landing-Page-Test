@@ -56,16 +56,6 @@
         }
     }
 
-    &__cta {
-        font-size: $font-sm;
-        color: $white;
-        transition: opacity 300ms;
-
-        &:hover {
-            opacity: 0.5;
-        }
-    }
-
     .overlay {
         position: fixed;
         top: 3.836875rem;
